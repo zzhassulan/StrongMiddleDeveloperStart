@@ -1,2 +1,2 @@
-My wat to become a strong middle developer
+My way to become a strong middle developer
 
