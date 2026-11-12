@@ -52,5 +52,23 @@ public class CalculatorTest {
 
         assertEquals(0, calculator.divide(a,b));
     }
+
+    @Test
+    void multiplyTest() {
+        Calculator cal = new Calculator();
+        int a = 2;
+        int b = 2;
+
+        assertEquals(4, cal.multiply(a,b));
+    }
+
+    @Test
+    void multiplyTest2() {
+        Calculator cal = new Calculator();
+        int a = 2;
+        int b = 0;
+
+        assertEquals(0, cal.multiply(a,b));
+    }
 }
 
