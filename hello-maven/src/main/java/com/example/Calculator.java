@@ -17,4 +17,14 @@ public class Calculator {
     public int multiply(int a, int b) {
         return a * b;
     }
+
+    public int findMax(int[] arr) {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max && arr != null) {
+                max = arr[i];
+            }
+        }
+       return max;
+    }
 }

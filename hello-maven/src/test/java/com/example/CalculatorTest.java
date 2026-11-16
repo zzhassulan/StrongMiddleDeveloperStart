@@ -70,5 +70,29 @@ public class CalculatorTest {
 
         assertEquals(0, cal.multiply(a,b));
     }
+
+    @Test
+    void findMaxTest() {
+        Calculator cal = new Calculator();
+        int[] a = {1,2,3,4,5};
+
+        assertEquals(5, cal.findMax(a));
+    }
+
+    @Test
+    void findMaxTest2() {
+        Calculator cal = new Calculator();
+        int[] a = {-1,-2,-3,-4,-5};
+
+        assertEquals(-1, cal.findMax(a));
+    }
+
+//    @Test
+//    void findMaxTest3() {
+//        Calculator cal = new Calculator();
+//        int[] a = {};
+//
+//        assertEquals(, cal.findMax(a));
+//    }
 }
 
