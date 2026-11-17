@@ -87,12 +87,20 @@ public class CalculatorTest {
         assertEquals(-1, cal.findMax(a));
     }
 
-//    @Test
-//    void findMaxTest3() {
-//        Calculator cal = new Calculator();
-//        int[] a = {};
-//
-//        assertEquals(, cal.findMax(a));
-//    }
+    @Test
+    void findMaxTest3() {
+        Calculator cal = new Calculator();
+        int[] a = {};
+
+        assertThrows(IllegalArgumentException.class, () -> cal.findMax(a));
+    }
+
+    @Test
+    void findMaxTest4() {
+        Calculator cal = new Calculator();
+        int[] a = null;
+
+        assertThrows(IllegalArgumentException.class, () -> cal.findMax(a));
+    }
 }
 
